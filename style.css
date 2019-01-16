@@ -1,98 +1,101 @@
-body {
-  background: lightblue;
-}
-/* every box is this size */
-
-.skyblue {
-  background: deepskyblue;
-}
-
-.box{
-  padding: 10px;
-  background: white;
-  margin-top:50px;
-  margin-left:5px;
-  margin-right:5px;
-  margin-bottom:20px;
-  align-content: center;
-}
-
-
-/* Giving our navbar some padding and a background color */
+/* Add your styles here */
 .navbar {
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 25px;
-  background: #5D6D7E;
-}
-
-/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-.navbar li {
-  display: d-block;
-  padding: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-  cursor: pointer;
-}
-h1 {
-  font-size: 35px;
-}
-h2 {
-  font-size: 20px;
-}
-
-
-p{
+    background: hsl(0, 0%, 100%);
     font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+.navbar-brand {
+    font-size: 25px;
+    font-family: Book Antiqua;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: rgb(15, 168, 168);
+}
+.navbar li a {
+    display: block;
+    color: rgb(172, 172, 172);
+  }
+
+.container {
+    display: block;
+    background-color: white;
 }
 
-
-.c-d{color:white;
-  font-size: 25px;
+.container h1 {
+    color:  rgb(15, 168, 168);
+    font-family: Book Antiqua;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
-.latitude {
-  color: white;
-  font-family: verdana;
-  font-size: 40px;
-  background-color: #2874A6;
-  border: 1px solid #2874A6;
-    padding: 15px;
+.container h2 {
+    color:  rgb(15, 168, 168);
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: Book Antiqua;
+    font-weight: bold;
 }
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-@media (max-width: 480px) {
-  .navbar li {
+.container img {
+    display: inline;
+    margin: 20px 20px;
+}
+.container p {
+    display: block;
     padding: 10px;
-  }
-  .box {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .navbar ul {
-    visibility: hidden;
-  }
-  #nav-select {
-    visibility: visible;
-  }
+    line-height: 2.2;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(128, 128, 128);
 }
 
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-lg-8 {
+    border-right: solid rgb(226, 225, 225);
+    border-right-width: 40px;
+    padding: 40px;
+}
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+.col-md-6 {
+    margin-left: -10px;
+}
+.container h3 {
+    color:  rgb(15, 168, 168);
+    text-align: center;
+    font-family: Book Antiqua;
+    font-weight: bold;
+}
+
+#maintable {  
+    width: 100%;
+    border-collapse: collapse; 
+    border-spacing: 40px;
+    padding: 50px;
+}
+#maintable td, th { border: 1px solid #CCC; 
+text-align:  center;}  
+
+
+#maintable th {  
+    background: #F3F3F3; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+}
+
+#maintable td {  
+    background: #FAFAFA; /* Lighter grey background */
+    text-align: center; /* Center our text */
+}
+
+.boxx {
+    border: solid rgb(15, 168, 168);
+
+}
+
+@media (max-width: 800px)
+{
+    .col-lg-8 {
+        border-bottom: solid rgb(226, 225, 225);
+        border-bottom-width: 40px;
+        border-right: 20px;
     }
 }
